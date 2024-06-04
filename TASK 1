@@ -1,0 +1,40 @@
+import re
+
+def check_length(password, min_length=8):
+    if len(password) < min_length:
+        return False, f"Password should be at least {min_length} characters long."
+    return True, ""
+
+def check_complexity(password):
+    if not re.search(r"[a-z]", password) or \
+       not re.search(r"[A-Z]", password) or \
+       not re.search(r"\d", password) or \
+       not re.search(r"[!@#$%^&*()-_=+{};:,<.>/?]", password):
+        return False, "Password should include uppercase, lowercase, numbers, and special characters."
+    return True, ""
+
+def check_uniqueness(password):
+    common_passwords = ['password', '123456', 'qwerty', 'abc123']  # Example list
+    if password.lower() in common_passwords:
+        return False, "Avoid using common passwords."
+    return True, ""
+
+def assess_password(password):
+    messages = []
+    checks = [
+        check_length,
+        check_complexity,
+        check_uniqueness
+    ]
+    for check in checks:
+        passed, message = check(password)
+        if not passed:
+            messages.append(message)
+    if len(messages) == 0:
+        return "Password is strong."
+    else:
+        return "\n".join(messages)
+
+# Example usage
+password = input("Enter your password: ")
+print(assess_password(password))
