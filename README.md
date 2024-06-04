@@ -18,3 +18,10 @@ Once the metrics are analyzed, the tool provides feedback to users based on the 
 The tool's functionality is demonstrated through a Python implementation, which prompts users to enter a password and then evaluates its strength based on the defined metrics. Users receive feedback on their password's strength, allowing them to make informed decisions to enhance the security of their accounts.
 
 In summary, the password strength assessment tool aims to promote the creation of strong and secure passwords by providing users with feedback on length, complexity, and uniqueness, thereby enhancing overall cybersecurity.
+
+<img width="1470" alt="Screenshot 2024-06-04 at 5 23 18 PM" src="https://github.com/Reonsly/CODETECH-INTERNSHIP-task-1/assets/171686715/1b762ef1-18a4-4e98-9aa8-e250355bf0dc">
+
+<img width="1470" alt="Screenshot 2024-06-04 at 5 23 18 PM" src="https://github.com/Reonsly/CODETECH-INTERNSHIP-task-1/assets/171686715/a99b2282-987d-482a-8807-d00eea1b6a3e">
+
+<img width="1470" alt="Screenshot 2024-06-04 at 6 26 33 PM" src="https://github.com/Reonsly/CODETECH-INTERNSHIP-task-1/assets/171686715/fc3445a3-28ff-4d06-8a1b-00e6ef7d5761">
+
